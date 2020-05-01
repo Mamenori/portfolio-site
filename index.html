@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Masaki Murakami</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <h1>Masaki Murakami</h1>
+        <div class="header_menu">
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="container">
+    <section id="about">
+      <h2 class="title">About</h2>
+      <div class="about_area">
+        <div class="about_area-img">
+          <img src="img/masakimurakami.jpg" alt="">
+          <p>
+            <!-- 2000年4月よりインフラエンジニアとして金融系システムのインフラ設計・構築に従事。Linux系OS、データベースを中心とした仕事をしていたが、Web系の仕事にも興味を持ち、2020年2月よりHTML、CSSの学習を興味本位で開始。その楽しさにハマってしまい、HTML・CSSに加え、同年3月よりjavascript・jQuery・Vueの学習開始。4月からはWordpressの学習を開始し、今に至る。 -->
+          </p>
+        </div>
+        <div class="about_area-description-text text">
+          1977年生まれの42歳。2000年4月よりインフラエンジニアとして金融系システムのインフラ設計・構築に従事。Linux系OS、データベースを中心とした仕事をしていたが、Web系の仕事にも興味を持ち、2020年2月よりHTML、CSSの学習を興味本位で開始。その楽しさにハマってしまい、HTML・CSSに加え、同年3月よりjavascript・jQuery・Vueの学習開始。4月からはWordpressの学習を開始し、今に至る。
+          <div class="about_area-description-text">
+          </div>
+          <div class="about_area-description-icon">
+            <a href="twitter">              
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="facebook">              
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <!-- <a href="instagram">              
+              <i class="fab fa-instagram fa-2x"></i>
+            </a> -->
+
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <hr>
+
+    
+    <section id="service">
+      <h2 class="title">Service</h2>
+      <div class="row">
+        <div class="col-md-4 col-xs-12">
+          <div class="service-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML / CSS</h3>
+          <p class="text">
+            HTML、CSSのコーディングが可能です。運用保守のしやすいコーディングを心掛けています。
+          </p>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="service-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>javascript / jQuery / Vue</h3>
+          <p class="text">
+            javascript、jQuery、Vueを使用して動きのあるWebページを作成することが出来ます。
+          </p>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="service-icon">
+            <i class="fab fa-wordpress"></i>
+          </div>
+          <h3>Wordpress</h3>
+          <p class="text">
+            HTMLで作成されたWebページをWordpressに移行することが出来ます。1からWordpressでサイト構築も可能です。
+          </p>
+          
+        </div>
+      </div>
+      
+    </section>
+
+    <hr>
+
+    <section id="contact">
+      <h2 class="title">Contact</h2>
+      <div class="form">
+        <!-- class, action, methodを変更しないでください -->
+        <form class="formrun" action="https://form.run/api/v1/r/nrit97d1qmluxymeeykhea76" method="post">
+          <!-- ↓自由に要素を追加・編集することができます -->
+          <div class="form_content">
+            <label>お名前</label>
+            <input name="お名前" type="text">
+          </div>
+    
+          <div>
+            <label>メールアドレス [必須]</label>
+            <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+          </div>
+    
+          <div>
+            <label>お問い合わせ [必須]</label>
+            <textarea rows=10 name="お問い合わせ" data-formrun-required></textarea>
+            <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+          </div>
+<!--     
+          <div>
+            <label>個人情報利用同意 [必須]</label>
+            <input type="checkbox" name="個人情報利用同意" data-formrun-required>
+            <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+          </div> -->
+    
+          <!-- ボット投稿をブロックするためのタグ -->
+          <div class="_formrun_gotcha">
+            <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+          </div>
+    
+          <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+        </form>
+      </div>
+
+    </section>
+  </main>
+  <hr>
+  <footer>
+    &copy; 2020 Masaki Murakami
+  </footer>
+</body>
+</html>
